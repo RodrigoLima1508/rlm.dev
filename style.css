@@ -181,11 +181,9 @@ nav .toggle { display: none; background: none; border: none; color: var(--white)
   border-radius: var(--radius);
   padding: 1.5rem;
   aspect-ratio: 4/3;
-  display: flex;
-  flex-direction: column;
 }
 .hero .visual .dots {
-  display: flex; gap: 6px; margin-bottom: 1.5rem;
+  display: flex; gap: 6px;
 }
 .hero .visual .dots span {
   width: 8px; height: 8px; border-radius: 50%;
@@ -193,19 +191,6 @@ nav .toggle { display: none; background: none; border: none; color: var(--white)
 .hero .visual .dots span:nth-child(1) { background: #ff5f56; }
 .hero .visual .dots span:nth-child(2) { background: #ffbd2e; }
 .hero .visual .dots span:nth-child(3) { background: #27c93f; }
-.hero .visual .stats {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; flex: 1;
-}
-.hero .visual .stat {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 0.8rem 1rem;
-}
-.hero .visual .stat .lbl { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
-.hero .visual .stat .val { font-size: 1.15rem; font-weight: 700; margin-top: 0.2rem; }
-.hero .visual .stat .val.green { color: #27c93f; }
-.hero .visual .stat .val.purple { color: var(--purple-light); }
 
 @media (max-width: 860px) {
   .hero .grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -425,7 +410,7 @@ nav .toggle { display: none; background: none; border: none; color: var(--white)
 }
 .diff blockquote {
   font-size: 1.3rem; font-weight: 600; line-height: 1.4;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem; color: var(--text);
 }
 .diff p { color: var(--text); font-size: 0.9rem; line-height: 1.6; max-width: 600px; }
 .diff ul {
