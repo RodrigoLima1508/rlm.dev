@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLab Studio | RLima Tech</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { background:#0a0a0a; color:#e0e0e0; }
+    .topo { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(10,10,10,0.9); backdrop-filter:blur(16px); border-bottom:1px solid rgba(34,197,94,.1); padding:1rem 2rem; display:flex; align-items:center; justify-content:space-between; }
+    .topo a { color:#888; text-decoration:none; font-size:.85rem; transition:color .2s; }
+    .topo a:hover { color:#22c55e; }
+    .topo .logo { font-size:1.1rem; font-weight:800; color:#22c55e; }
+    .ph { min-height:100vh; background:linear-gradient(135deg,#0a0a0a,#111); display:flex; align-items:center; justify-content:center; text-align:center; }
+    .ph h1 { font-size:clamp(2rem,5vw,4rem); font-weight:800; color:#22c55e; margin-bottom:.8rem; }
+    .ph p { color:#666; font-size:1rem; }
+    .ps { padding:4rem 2rem; border-bottom:1px solid rgba(34,197,94,.03); }
+    .ps h2 { font-size:1.5rem; font-weight:700; color:#22c55e; margin-bottom:1.5rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+    .card { background:rgba(255,255,255,.02); border:1px solid rgba(34,197,94,.08); border-radius:12px; padding:1.5rem; text-align:center; transition:border-color .3s; }
+    .card:hover { border-color:#22c55e; }
+    .card .ic { font-size:2.5rem; margin-bottom:.8rem; }
+    .card h3 { color:#fff; font-size:.9rem; margin-bottom:.3rem; }
+    .card p { color:#666; font-size:.8rem; }
+    .card .pr { font-size:1.5rem; font-weight:800; color:#22c55e; margin-top:.5rem; }
+    .btn-g { background:#22c55e; color:#000; border:none; padding:.8rem 1.8rem; border-radius:50px; font-weight:700; font-size:.85rem; text-decoration:none; display:inline-flex; align-items:center; gap:.5rem; transition:background .3s; }
+    .btn-g:hover { background:#16a34a; }
+    .btn-o { background:transparent; color:#22c55e; border:1.5px solid #22c55e; padding:.8rem 1.8rem; border-radius:50px; font-weight:600; font-size:.85rem; text-decoration:none; display:inline-flex; align-items:center; gap:.5rem; transition:background .3s; }
+    .btn-o:hover { background:rgba(34,197,94,.05); }
+    .tabela { width:100%; border-collapse:collapse; font-size:.85rem; }
+    .tabela th, .tabela td { padding:.8rem; text-align:center; border-bottom:1px solid rgba(34,197,94,.08); }
+    .tabela th { color:#22c55e; font-weight:700; }
+    .tabela td { color:#888; }
+    .ft { background:#050505; padding:1.5rem; text-align:center; font-size:.8rem; color:#444; }
+    .ft a { color:#22c55e; text-decoration:none; }
+    @media (max-width:768px) { .ps { padding:3rem 1.5rem; } }
+  </style>
+</head>
+<body>
+  <div class="topo">
+    <a href="../index.html" class="logo">RLima Tech</a>
+    <a href="../index.html#contato"><i class="fab fa-whatsapp"></i> Solicitar Projeto</a>
+  </div>
+
+  <section class="ph">
+    <div>
+      <h1>💪 FitLab Studio</h1>
+      <p>Treino e evolu&ccedil;&atilde;o</p>
+      <div style="margin-top:1.5rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#" class="btn-g"><i class="fas fa-user-plus"></i> Matr&iacute;cula</a>
+        <a href="../index.html#contato" class="btn-o"><i class="fas fa-arrow-left"></i> Voltar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ps"><div class="container"><h2>Planos</h2>
+    <div class="grid">
+      <div class="card"><div class="ic">🏋️</div><h3>Basic</h3><p>Muscula&ccedil;&atilde;o livre</p><div class="pr">R$ 89</div></div>
+      <div class="card" style="border-color:#22c55e;"><div class="ic">🔥</div><h3>Plus</h3><p>Muscula&ccedil;&atilde;o + Aulas</p><div class="pr">R$ 129</div></div>
+      <div class="card"><div class="ic">👑</div><h3>Premium</h3><p>Acesso total</p><div class="pr">R$ 199</div></div>
+    </div>
+  </div></section>
+
+  <section class="ps"><div class="container"><h2>Professores</h2>
+    <div class="grid">
+      <div class="card"><div class="ic" style="font-size:3rem;">R</div><h3>Prof. Rafael</h3><p>Muscula&ccedil;&atilde;o</p></div>
+      <div class="card"><div class="ic" style="font-size:3rem;">C</div><h3>Prof. Carol</h3><p>CrossFit</p></div>
+      <div class="card"><div class="ic" style="font-size:3rem;">F</div><h3>Prof. Felipe</h3><p>Funcional</p></div>
+      <div class="card"><div class="ic" style="font-size:3rem;">J</div><h3>Prof. Julia</h3><p>Yoga</p></div>
+    </div>
+  </div></section>
+
+  <section class="ps"><div class="container"><h2>Hor&aacute;rios</h2>
+    <div style="overflow-x:auto;">
+      <table class="tabela">
+        <tr><th>Hor&aacute;rio</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th></tr>
+        <tr><td>6h-7h</td><td>CrossFit</td><td>Funcional</td><td>CrossFit</td><td>Funcional</td><td>CrossFit</td></tr>
+        <tr><td>8h-9h</td><td>Muscula&ccedil;&atilde;o</td><td>Muscula&ccedil;&atilde;o</td><td>Muscula&ccedil;&atilde;o</td><td>Muscula&ccedil;&atilde;o</td><td>Muscula&ccedil;&atilde;o</td></tr>
+        <tr><td>18h-19h</td><td>CrossFit</td><td>Funcional</td><td>CrossFit</td><td>Funcional</td><td>CrossFit</td></tr>
+        <tr><td>19h-20h</td><td>Muscula&ccedil;&atilde;o</td><td>Spinning</td><td>Muscula&ccedil;&atilde;o</td><td>Spinning</td><td>Muscula&ccedil;&atilde;o</td></tr>
+      </table>
+    </div>
+  </div></section>
+
+  <div class="ft">
+    <p>&copy; 2026 FitLab Studio. Projeto desenvolvido por <a href="../index.html">RLima Tech</a></p>
+  </div>
+</body>
+</html>

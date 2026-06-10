@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malibu Automotiva | rlm dev</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { background:#0a0a0a; }
+    .topo { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(10,10,10,0.9); backdrop-filter:blur(16px); border-bottom:1px solid rgba(255,255,255,0.05); padding:1rem 2rem; display:flex; align-items:center; justify-content:space-between; }
+    .topo a { color:#888; text-decoration:none; font-size:.85rem; transition:color .2s; }
+    .topo a:hover { color:#dc2626; }
+    .topo .logo { font-size:1.1rem; font-weight:800; color:#dc2626; }
+    .ph { min-height:100vh; background:linear-gradient(135deg,#0a0a0a,#1a0808); display:flex; align-items:center; justify-content:center; text-align:center; }
+    .ph h1 { font-size:clamp(2rem,5vw,4rem); font-weight:800; color:#dc2626; margin-bottom:.8rem; }
+    .ph p { color:#888; font-size:1rem; }
+    .ps { padding:4rem 2rem; border-bottom:1px solid rgba(255,255,255,0.03); }
+    .ps h2 { font-size:1.5rem; font-weight:700; color:#dc2626; margin-bottom:1.5rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+    .card { background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.05); border-radius:12px; padding:1.5rem; text-align:center; transition:border-color .3s; }
+    .card:hover { border-color:rgba(220,38,38,0.2); }
+    .card .ic { font-size:2.5rem; margin-bottom:.8rem; }
+    .card h3 { color:#fff; font-size:.9rem; margin-bottom:.3rem; }
+    .card p { color:#888; font-size:.8rem; }
+    .card .pr { color:#dc2626; font-weight:700; margin-top:.3rem; }
+    .btn-r { background:#dc2626; color:#fff; border:none; padding:.8rem 1.8rem; border-radius:50px; font-weight:700; font-size:.85rem; text-decoration:none; display:inline-flex; align-items:center; gap:.5rem; transition:background .3s; }
+    .btn-r:hover { background:#b91c1c; }
+    .btn-o { background:transparent; color:#dc2626; border:1.5px solid #dc2626; padding:.8rem 1.8rem; border-radius:50px; font-weight:600; font-size:.85rem; text-decoration:none; display:inline-flex; align-items:center; gap:.5rem; transition:background .3s; }
+    .btn-o:hover { background:rgba(220,38,38,0.06); }
+    .gale { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:.8rem; }
+    .gale div { aspect-ratio:4/3; border-radius:10px; background:linear-gradient(135deg,#1a1a1a,#2a0a0a); display:flex; align-items:center; justify-content:center; font-size:2.5rem; transition:transform .3s; flex-direction:column; gap:.3rem; color:#888; font-size:.7rem; font-weight:600; }
+    .gale div:hover { transform:scale(1.02); }
+    .gale div span { font-size:2rem; }
+    .ft { background:#050505; padding:1.5rem; text-align:center; font-size:.8rem; color:#555; }
+    .ft a { color:#dc2626; text-decoration:none; }
+    @media (max-width:768px) { .ps { padding:3rem 1.5rem; } }
+  </style>
+</head>
+<body>
+  <div class="topo">
+    <a href="../index.html" class="logo">rlm dev</a>
+    <a href="../index.html#contato"><i class="fab fa-whatsapp"></i> Solicitar Projeto</a>
+  </div>
+
+  <section class="ph">
+    <div>
+      <h1>🚗 Malibu Automotiva</h1>
+      <p>Funilaria e Pintura Automotiva de Excel&ecirc;ncia</p>
+      <div style="margin-top:1.5rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#" class="btn-r"><i class="fab fa-whatsapp"></i> Solicitar Or&ccedil;amento</a>
+        <a href="../index.html#contato" class="btn-o"><i class="fas fa-arrow-left"></i> Voltar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ps"><div class="container"><h2>Servi&ccedil;os</h2>
+    <div class="grid">
+      <div class="card"><div class="ic">🔧</div><h3>Funilaria</h3><p>Reparo de amassados e colis&otilde;es</p></div>
+      <div class="card"><div class="ic">🎨</div><h3>Pintura Completa</h3><p>Pintura geral e detalhamento</p></div>
+      <div class="card"><div class="ic">🔨</div><h3>Martelinho de Ouro</h3><p>Remo&ccedil;&atilde;o de amassados sem pintura</p></div>
+      <div class="card"><div class="ic">✨</div><h3>Polimento</h3><p>Polimento t&eacute;cnico e cristaliza&ccedil;&atilde;o</div>
+      <div class="card"><div class="ic">🛡️</div><h3>Prote&ccedil;&atilde;o de Pintura</h3><p>PPF e vitrifica&ccedil;&atilde;o</p></div>
+      <div class="card"><div class="ic">🔲</div><h3>Est&eacute;tica Automotiva</h3><p>Higieniza&ccedil;&atilde;o e revitaliza&ccedil;&atilde;o</p></div>
+    </div>
+  </div></section>
+
+  <section class="ps"><div class="container"><h2>Antes &amp; Depois</h2>
+    <div class="gale">
+      <div><span>🚗</span>Antes</div>
+      <div><span>✨</span>Depois</div>
+      <div><span>🚙</span>Antes</div>
+      <div><span>🌟</span>Depois</div>
+    </div>
+  </div></section>
+
+  <section class="ps"><div class="container"><h2>Localiza&ccedil;&atilde;o</h2>
+    <div style="background:rgba(255,255,255,0.02);border-radius:12px;padding:2rem;text-align:center;border:1px solid rgba(255,255,255,0.05);">
+      <p style="margin-bottom:.3rem;">R. Dom Jo&atilde;o VI, 28 - Jardim Victoria</p>
+      <p style="color:#666;">Caieiras - SP</p>
+      <p style="margin-top:.8rem;color:#dc2626;font-weight:600;">Seg-Sex: 8h &agrave;s 18h | S&aacute;b: 8h &agrave;s 12h</p>
+    </div>
+  </div></section>
+
+  <div class="ft">
+    <p>&copy; 2026 Malibu Automotiva. Projeto desenvolvido por <a href="../index.html">rlm dev</a></p>
+  </div>
+</body>
+</html>
