@@ -83,7 +83,7 @@ var projects = {
   malibu: {
     title: "Malibu Automotiva",
     html: [
-      '<div class="preview" style="background:linear-gradient(135deg,#111,#4a0000);"></div>',
+      '<div class="preview" style="background:#1E293B;"></div>',
       '<div class="info">',
         '<p><strong>Categoria:</strong> Funilaria e Pintura Automotiva</p>',
         '<p><strong>Tecnologias:</strong> Next.js, TypeScript, Prisma, Tailwind CSS</p>',
@@ -95,7 +95,7 @@ var projects = {
   maison: {
     title: "Maison Essence",
     html: [
-      '<div class="preview" style="background:linear-gradient(135deg,#1a0a00,#3a1a00);"></div>',
+      '<div class="preview" style="background:#1E293B;"></div>',
       '<div class="info">',
         '<p><strong>Categoria:</strong> Loja Virtual de Perfumes</p>',
         '<p><strong>Tecnologias:</strong> React, Vite, CSS Modules</p>',
@@ -107,7 +107,7 @@ var projects = {
   primeodonto: {
     title: "Prime Odonto",
     html: [
-      '<div class="preview" style="background:linear-gradient(135deg,#0a1a2e,#003366);"></div>',
+      '<div class="preview" style="background:#1E293B;"></div>',
       '<div class="info">',
         '<p><strong>Categoria:</strong> Cl&iacute;nica Odontol&oacute;gica</p>',
         '<p><strong>Tecnologias:</strong> React, Vite, CSS Modules</p>',
